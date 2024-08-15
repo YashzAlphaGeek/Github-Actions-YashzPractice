@@ -2,11 +2,11 @@ name: Conditional-Workflow
 on: [push]
 jobs:
   hello-world:
-    if: github.repository == 'YashzAlphaGeek/Spring-Boot-JPA-Hibernate-Query-Methods'
+    if: github.repository == 'YashzAlphaGeek/Github-Examples-YashzPractice'
     runs-on: ubuntu-latest
     steps:
-      - name: "Hello Spring Boot"
-        run:  echo "Hello Spring Boot!"
+      - name: "Hello Github-Examples-YashzPractice"
+        run:  echo "Hello Github-Examples-YashzPractice!"
   goodbye-moon:
     runs-on: ubuntu-latest
     steps:
