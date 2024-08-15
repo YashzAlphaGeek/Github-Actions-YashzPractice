@@ -1,12 +1,12 @@
-name: example-workflow
+name: Conditional-Workflow
 on: [push]
 jobs:
   hello-world:
-    if: github.repository == 'octo-org/octo-repo-prod'
+    if: github.repository == 'YashzAlphaGeek/Spring-Boot-JPA-Hibernate-Query-Methods'
     runs-on: ubuntu-latest
     steps:
-      - name: "Hello World"
-        run:  echo "Hello World!"
+      - name: "Hello Spring Boot"
+        run:  echo "Hello Spring Boot!"
   goodbye-moon:
     runs-on: ubuntu-latest
     steps:
