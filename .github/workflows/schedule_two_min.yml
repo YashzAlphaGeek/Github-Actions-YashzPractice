@@ -1,3 +1,5 @@
+name: Scheduling 2 Minutes
+
 on:
   schedule:
     - cron: '*/2 * * * *'
