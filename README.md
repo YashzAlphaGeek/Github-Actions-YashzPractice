@@ -21,7 +21,11 @@ This repository includes the following GitHub Actions workflows located in the `
 ### 4. **[`schedule_two_min.yml`](https://github.com/YashzAlphaGeek/Github-Examples-YashzPractice/blob/main/.github/workflows/schedule_two_min.yml)**:
    - **Purpose**: This workflow is scheduled to run every two minutes, allowing for regular checks, updates, or automated tasks that need frequent execution.
    - **Trigger**: Triggered by a cron schedule every two minutes.
-  
+
+### 5. [`webhook.yml`](https://github.com/YashzAlphaGeek/Github-Examples-YashzPractice/blob/main/.github/workflows/webhook.yml)
+- **Purpose**: Responds to custom repository dispatch events. It is used to trigger actions based on external events or systems interacting with the GitHub repository.
+- **Trigger**: Activated manually through repository dispatch events, specifically using the type `webhook`.
+
 Each of these workflows is defined in its respective YAML file, which can be navigated directly via the provided links.
 
 ### Workflow File
