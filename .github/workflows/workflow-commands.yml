@@ -15,16 +15,11 @@ jobs:
           echo "Msg1"
           echo "Msg2"
           echo "::endgroup::"
-          steps:
-            - name: "group logging"
-              run: |
-                echo "::group::My Group Message"
-                echo "Msg1"
-                echo "Msg2"
-                echo "::endgroup::"
-            - name: "step 1"
-              run: |
-                echo "MY_VAL=hello" >> $GITHUB_ENV             
-            - name: "step 2"
-              run: |
-                echo $MY_VAL   
+      
+      - name: "step 1"
+        run: |
+          echo "MY_VAL=hello" >> $GITHUB_ENV
+          
+      - name: "step 2"
+        run: |
+          echo $MY_VAL
