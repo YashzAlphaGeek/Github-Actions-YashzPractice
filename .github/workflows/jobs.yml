@@ -1,0 +1,24 @@
+name: "Dependent Jobs"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
+    steps:
+      - name: "Step 1"
+        run: echo "Hello! $MY_ACTOR"
+        env:
+            MY_ACTOR: ${{github.actor}}
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Step 1"
+        run: echo "Hello! $MY_ACTOR"
+        env:
+            MY_ACTION: ${{github.action}}
+            MY_ACTOR: ${{github.actor}}
