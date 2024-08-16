@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: YashzAlphaGeek/potential-disco@v1.4
+        uses: YashzAlphaGeek/potential-disco@v1.5
         with:
           name: 'Yashwanth'
       # Use the output from the `hello` step
