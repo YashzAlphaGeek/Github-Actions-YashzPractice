@@ -12,5 +12,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Run a script
-        run: 'echo "Event of type: $GITHUB_EVENT_NAME"'
-        run: 'echo "Event of type: $GITHUB_REPOSITORY_OWNER"'
+        run: | 
+          'echo "Event of type: $GITHUB_EVENT_NAME"'
+          'echo "Event of owner: $GITHUB_REPOSITORY_OWNER"'
