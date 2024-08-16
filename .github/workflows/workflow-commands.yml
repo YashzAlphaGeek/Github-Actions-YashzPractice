@@ -22,7 +22,7 @@ jobs:
       
       - name: "Display Values"
         run: |
-          env grep | GIT
+          env | grep GIT
           
       - name: "step 3"
         run: |
