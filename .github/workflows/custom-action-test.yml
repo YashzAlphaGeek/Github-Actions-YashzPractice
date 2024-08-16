@@ -1,3 +1,5 @@
+name: "Custom Action Workflow"
+
 on: [push]
 
 jobs:
