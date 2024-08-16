@@ -1,4 +1,4 @@
-name: "Workflow Commands"
+name: "Context Workflow"
 
 on:
   push:
@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Step 1"
-        run: echo "Hello! {github.action}"
+        run: echo "Hello! {github.actor}"
         env:
             MY_ACTION: ${{github.action}}
+            MY_ACTOR: ${{github.actor}}
