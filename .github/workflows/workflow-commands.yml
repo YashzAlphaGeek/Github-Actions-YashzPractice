@@ -19,7 +19,11 @@ jobs:
       - name: "step 1"
         run: |
           echo "MY_VAL=hello" >> $GITHUB_ENV
+      
+      - name: "Display Values"
+        run: |
+          env grep | GIT
           
-      - name: "step 2"
+      - name: "step 3"
         run: |
           echo $MY_VAL
